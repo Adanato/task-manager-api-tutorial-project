@@ -1,10 +1,9 @@
 const mongoose = require("mongoose");
 
-const connectionString =
-  "mongodb+srv://adam:tOgbskYfq0efe79m@cluster0.dzp1wgd.mongodb.net/Cluster0?retryWrites=true&w=majority";
+const connectionString = ``;
 
 function connectDB(url) {
-  mongoose.connect(connectionString, {
+  mongoose.connect(url, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
